@@ -8,15 +8,20 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="shortcut icon" href="./images/fav-icon.png" type="image/x-icon">  
 
 </head>
 <body>
   <header>
     <nav class="navbar">
-      <div class="logo">
-        <a><img src="./images/logo.png"></a>
+      <div class="navbar__logo">
+        <a><i class="ri-camera-lens-fill navbar__logo--camera"></i> 
+            <span class="navbar__logo--title"> LENZE
+            </span> <span class="navbar__logo--subTitle">PHOTOGRAPHY PORTFOLIO</span>
+        </a>
       </div>
-        <ul class="navbar-links">
+      </div>
+        <ul class="navbar__links">
           <li>HOME</li>
           <li>PAGE</li>
           <li>PORTFOLIO</li>
@@ -25,7 +30,7 @@
           <li>BLOG</li>
           <li>CONTACT</li>
         </ul>
-        <div class="burger-menu">
+        <div class="navbar__burgerMenu">
           <div class="line1"></div>
           <div class="line2"></div>
           <div class="line3"></div>
@@ -33,120 +38,124 @@
       </div>
     </nav>
     <section class="header"> 
-      <div class="header-picture">
-        <div class="overlay">
-            <div class="header-context">
+      <div class="header__banner">
+        <div class="header__overlay">
+            <div class="header__context">
               <h1>LENZE SHOWCASE</h1>
               <p>
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua.
               </p>
-              <h3> <span  class="header-home">HOME</span> | <span class="header-portfolio">PORTFOLIO</span> </h3>
+              <h3> <span  class="header__home">HOME</span> | <span class="header__portfolio">PORTFOLIO</span> </h3>
             </div>
         </div>
       </div>
     </section>
   </header>
-  <button id='scroll-button'><i class="ri-arrow-up-line"></i></button>
+
+
+
   <section class="gallery">
-    <div class="container">
-      <ul class="filter-menu">
-        <li data-target="all">All</li>
-        <li data-target="category1">Category 1</li>
-        <li data-target="category2">Category 2</li 1li>
-        <li data-target="category3">Category 3</li>
-        <li data-target="category4">Category 4</li>
+    <div class="gallery__container">
+
+      <ul class="gallery__tabs">
+        <li class = "category1 category" data-target="all">All</li>
+        <li class = "category2 category" data-target="category1">Category 1</li>
+        <li class = "category3 category" data-target="category2">Category 2</li 1li>
+        <li class = "category4 category" data-target="category3">Category 3</li>
+        <li class = "category5 category" data-target="category4">Category 4</li>
       </ul>
-      <ul class="filter-item">
-        <li class="image" data-item="category1">
-          <img  class="image__img" src="./images/portfolio-feature-image1.jpg" alt="Gallery-images">
+
+      <ul class="gallery__content">
+        <li class="gallery__image" data-item="category1">
+          <img  class="image__img" src="./images/portfolio-feature-image1.jpg" alt="image__alt">
           <div class="image__overlay">
             <h2 class="imag__title">This is Portfolio Title</h2>
             <p class="image__decription">This is Subtitle</p>
             <a href="./html/image-1.html" target="_blank"> <i class="ri-add-line"></i> </a>
           </div>
         </li>
-        <li class="image" data-item="category1">
-          <img  class="image__img" src="./images/portfolio-feature-image2.jpg" alt="Gallery-images">
+        <li class="gallery__image" data-item="category1">
+          <img  class="image__img" src="./images/portfolio-feature-image2.jpg" alt="image__alt">
           <div class="image__overlay">
             <h2 class="imag__title">This is Portfolio Title</h2>
             <p class="image__decription">This is Subtitle</p>
             <a href="./html/image-2.html" target="_blank"> <i class="ri-add-line"></i> </a>
           </div>
         </li>
-        <li class="image" data-item="category1">
-          <img  class="image__img" src="./images/portfolio-feature-image3.jpg" alt="Gallery-images">
+        <li class="gallery__image" data-item="category1">
+          <img  class="image__img" src="./images/portfolio-feature-image3.jpg" alt="image__alt">
           <div class="image__overlay">
             <h2 class="imag__title">This is Portfolio Title</h2>
             <p class="image__decription">This is Subtitle</p>
             <a href="./html/image-3.html" target="_blank"><i class="ri-add-line"></i></a>
           </div>
         </li>
-        <li class="image" data-item="category2">
-          <img  class="image__img" src="./images/portfolio-feature-image4.jpg" alt="Gallery-images">
+        <li class="gallery__image" data-item="category2">
+          <img  class="image__img" src="./images/portfolio-feature-image4.jpg" alt="image__alt">
           <div class="image__overlay">
             <h2 class="imag__title">This is Portfolio Title</h2>
             <p class="image__decription">This is Subtitle</p>
             <a href="./html/image-4.html" target="_blank"><i class="ri-add-line"></i></a>
           </div>
         </li>
-        <li class="image" data-item="category2">
-          <img  class="image__img" src="./images/portfolio-feature-image5.jpg" alt="Gallery-images">
+        <li class="gallery__image" data-item="category2">
+          <img  class="image__img" src="./images/portfolio-feature-image5.jpg" alt="image__alt">
           <div class="image__overlay">
             <h2 class="imag__title">This is Portfolio Title</h2>
             <p class="image__decription">This is Subtitle</p>
             <a href="./html/image-5.html" target="_blank"><i class="ri-add-line"></i></a>
           </div>
         </li>
-        <li class="image" data-item="category2">
-          <img  class="image__img" src="./images/portfolio-feature-image6.jpg" alt="Gallery-images">
+        <li class="gallery__image" data-item="category2">
+          <img  class="image__img" src="./images/portfolio-feature-image6.jpg" alt="image__alt">
           <div class="image__overlay">
             <h2 class="imag__title">This is Portfolio Title</h2>
             <p class="image__decription">This is Subtitle</p>
             <a href="./html/image-6.html" target="_blank"><i class="ri-add-line"></i></a>
           </div>
         </li>
-        <li class="image" data-item="category3">
-          <img  class="image__img" src="./images/portfolio-feature-image7.jpg" alt="Gallery-images">
+        <li class="gallery__image" data-item="category3">
+          <img  class="image__img" src="./images/portfolio-feature-image7.jpg" alt="image__alt">
           <div class="image__overlay">
             <h2 class="imag__title">This is Portfolio Title</h2>
             <p class="image__decription">This is Subtitle</p>
             <a href="./html/image-7.html" target="_blank"><i class="ri-add-line"></i></a>
           </div>
         </li>
-        <li class="image" data-item="category3">
-          <img  class="image__img" src="./images/portfolio-feature-image8.jpg" alt="Gallery-images">
+        <li class="gallery__image" data-item="category3">
+          <img  class="image__img" src="./images/portfolio-feature-image8.jpg" alt="image__alt">
           <div class="image__overlay">
             <h2 class="imag__title">This is Portfolio Title</h2>
             <p class="image__decription">This is Subtitle</p>
             <a href="./html/image-8.html" target="_blank"><i class="ri-add-line"></i></a>
           </div>
         </li>
-        <li class="image" data-item="category3">
-          <img  class="image__img" src="./images/portfolio-feature-image9.jpg" alt="Gallery-images">
+        <li class="gallery__image" data-item="category3">
+          <img  class="image__img" src="./images/portfolio-feature-image9.jpg" alt="image__alt">
           <div class="image__overlay">
             <h2 class="imag__title">This is Portfolio Title</h2>
             <p class="image__decription">This is Subtitle</p>
             <a href="./html/image-9.html" target="_blank"><i class="ri-add-line"></i></a>
           </div>
         </li>
-        <li class="image" data-item="category4">
-          <img  class="image__img" src="./images/portfolio-feature-image10.jpg" alt="Gallery-images">
+        <li class="gallery__image" data-item="category4">
+          <img  class="image__img" src="./images/portfolio-feature-image10.jpg" alt="image__alt">
           <div class="image__overlay">
             <h2 class="imag__title">This is Portfolio Title</h2>
             <p class="image__decription">This is Subtitle</p>
             <a href="./html/image-10.html" target="_blank"><i class="ri-add-line"></i></a>
           </div>
         </li>
-        <li class="image" data-item="category4">
-          <img  class="image__img" src="./images/portfolio-feature-image11.jpg" alt="Gallery-images">
+        <li class="gallery__image" data-item="category4">
+          <img  class="image__img" src="./images/portfolio-feature-image11.jpg" alt="image__alt">
           <div class="image__overlay">
             <h2 class="imag__title">This is Portfolio Title</h2>
             <p class="image__decription">This is Subtitle</p>
             <a href="./html/image-11.html" target="_blank"><i class="ri-add-line"></i></a>
           </div>
         </li>
-        <li class="image" data-item="category4">
-          <img  class="image__img" src="./images/portfolio-feature-image12.jpg" alt="Gallery-images">
+        <li class="gallery__image" data-item="category4">
+          <img  class="image__img" src="./images/portfolio-feature-image12.jpg" alt="image__alt">
           <div class="image__overlay">
             <h2 class="imag__title">This is Portfolio Title</h2>
             <p class="image__decription">This is Subtitle</p>
@@ -157,58 +166,59 @@
     </ul>
     </div>
   </section>
+
   <footer class="footer">
-  <section class="footer-top">
-    <div class="about-company">
-      <img src="./images/footer-logo.png">
+  <section class="footer__top">
+    <div class="footer__content--about-company">
+      <span class="footer__logo"><i class="ri-camera-lens-fill footer__logo--image"></i> LENZE</span>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt nisi, suscipit optio quis dolores adipisci mollitia fugit porro nobis illo? Eos, veritatis minima ipsum magnam qui commodi debitis aperiam dolores!</p>
     </div>
-    <div class="footer-gallery">
+    <div class="footer__content--gallery">
         <h2>GALLERY</h2>
-          <div class="footer-images">
-            <div class="gallery-image" >
+          <div class="footer__images">
+            <div class="footer__gallery-image" >
               <img class="gallery-image__img" src="./images/footer-gallery-thumbnail1.jpg" alt="Footer-gallery-picture">
               <div class="gallery-image__overlay">
                 <a href="./html/image-6.html" target="_blank"><i class="ri-add-line"></i></a>
               </div>
             </div>
-            <div class="gallery-image" >
+            <div class="footer__gallery-image" >
               <img class="gallery-image__img" src="./images/footer-gallery-thumbnail2.jpg" alt="Footer-gallery-picture">
               <div class="gallery-image__overlay">
                 <a href="./html/image-8.html" target="_blank"><i class="ri-add-line"></i></a>
               </div>
             </div>
-            <div class="gallery-image" >
+            <div class="footer__gallery-image" >
               <img class="gallery-image__img" src="./images/footer-gallery-thumbnail3.jpg" alt="Footer-gallery-picture">
               <div class="gallery-image__overlay">
                 <a href="./html/image-3.html" target="_blank"><i class="ri-add-line"></i></a>
               </div>
             </div>
-            <div class="gallery-image" >
+            <div class="footer__gallery-image" >
               <img class="gallery-image__img" src="./images/footer-gallery-thumbnail4.jpg" alt="Footer-gallery-picture">
               <div class="gallery-image__overlay">
                 <a href="./html/image-9.html" target="_blank"><i class="ri-add-line"></i></a>
               </div>
             </div>
-            <div class="gallery-image" >
+            <div class="footer__gallery-image" >
               <img class="gallery-image__img" src="./images/footer-gallery-thumbnail5.jpg" alt="Footer-gallery-picture">
               <div class="gallery-image__overlay">
                 <a href="./html/image-1.html" target="_blank"><i class="ri-add-line"></i></a>
               </div>
             </div>
-            <div class="gallery-image">
+            <div class="footer__gallery-image">
               <img class="gallery-image__img" src="./images/footer-gallery-thumbnail6.jpg" alt="Footer-gallery-picture">
               <div class="gallery-image__overlay">
                 <a href="./html/image-4.html" target="_blank"><i class="ri-add-line"></i></a>
               </div>
             </div>
-            <div class="gallery-image">
+            <div class="footer__gallery-image">
               <img class="gallery-image__img" src="./images/footer-gallery-thumbnail7.jpg" alt="Footer-gallery-picture">
               <div class="gallery-image__overlay">
                 <a><i class="ri-add-line"></i></a>
               </div>
             </div>
-            <div class="gallery-image">
+            <div class="footer__gallery-image">
               <img class="gallery-image__img" src="./images/footer-gallery-thumbnail8.jpg" alt="Footer-gallery-picture">
               <div class="gallery-image__overlay">
                 <a><i class="ri-add-line"></i></a>
@@ -216,7 +226,7 @@
             </div>
             </div>
     </div>
-    <div class="get-in-touch">
+    <div class="footer__content--getInTouch">
       <h2>GET IN TOUCH</h2>
       <p> At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.</p>
       <ul>
@@ -224,7 +234,7 @@
         <li>+ &nbsp info@yourdomain.com</li>
         <li>+ &nbsp 111-123-456-9999</li>
       </ul>
-      <ul class="social-icons-container">
+      <ul class="footer__socialIcons">
         <li><img src="./images/social-icon1.png"/></li>
         <li><img src="./images/social-icon2.png"/></li>
         <li><img src="./images/social-icon3.png"/></li>
@@ -238,8 +248,8 @@
     </div>
   </section>
 
-    <section class="footer-bottom">
-          <div class="copyright">
+    <section class="footer__bottom">
+          <div class="footer__copyright">
                 © Copyright 2021 <a>LENZE.COM</a> - All Rights Reserved. 
             </div>
             <nav>
@@ -252,6 +262,9 @@
             </nav>
     </section>
   </footer>
+  <section>
+    <button id='scrollButton'><i class="ri-arrow-up-line"></i></button>
+  </section>
   <script type="text/javascript" src="app.js"></script>
 </body>
 </html>

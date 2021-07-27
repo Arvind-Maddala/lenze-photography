@@ -25,32 +25,6 @@ const navBurger = () => {
 }
 
 
-//ImageFiltering
-const imgFilter = () => {
-  
-    sortBtn.addEventListener('click',function(e) {
-        if(e.target.classList.contains('category')) {
-            
-            tabs.forEach(t => 
-                t.classList.remove('current'))
-            e.target.classList.add('current')
-            let targetData = (e.target.getAttribute('data-target'))
-
-            tabsContent.forEach(t => 
-                {
-                    t.classList.remove('active');
-                    t.classList.add('delete');
-                    if(t.getAttribute('data-item') === targetData || targetData == "all" )
-                    t.classList.remove('delete');
-                }
-            ) 
-        } 
-        return
-     
-    })
-}
-
-
 
 const scrollButtonJS = () =>
 {
@@ -68,5 +42,4 @@ const scrollButtonJS = () =>
 
 
 navBurger();
-imgFilter() ;
 scrollButtonJS();
