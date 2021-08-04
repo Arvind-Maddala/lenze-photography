@@ -200,6 +200,7 @@ ul{
   flex-wrap: wrap;
   justify-content:center;
   align-items:center;
+  flex-direction: row-reverse;
 }
 
 .gallery__content .gallery__image.active{
@@ -305,6 +306,8 @@ margin-top:10px;
   display: flex;
   justify-content:flex-start;
   align-items: center;
+  font-weight: 600;
+  color: var(--gray);
 }
 .footer__logo i{
   font-size:3rem;

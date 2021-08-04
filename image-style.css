@@ -10,6 +10,8 @@
 :root{
   --gray: #2c3e50;
   --light-gray: #4e4d4e;
+  --dark-yellow-:#ecb316;;
+  --yellow:#f5cb5c;;
 }
 
 body {
@@ -173,7 +175,7 @@ color:var(--gray)
 .portfolio__contextContainer h4{
   color: #e8eddf;
 } 
-button{
+.portfolio__button{
   padding:10px 18px;
   font-size: 15px;
   margin:15px 0 0;
@@ -183,7 +185,7 @@ button{
   color: gray;
 }
 
-button:hover{
+.portfolio__button:hover{
   background-color:#242423;
   color:#fff;
   cursor: pointer;
@@ -525,8 +527,9 @@ align-items:center;
   bottom: 20px;
   right: 20px;
   width: 50px;
-  height: 50px;border-radius:50%;
-  background-color: var(--red);
+  height: 50px;
+  border-radius:50%;
+  background-color: var(--yellow);
   box-shadow: 0 0 10px rgba(0,0,0,0.25);
   color: #fff;
   border: none;
@@ -536,7 +539,7 @@ align-items:center;
 }
 
 #scrollButton:active{
-  background-color: var(--maroon)
+  background-color: var(--dark-yellow)
 }
 
 
