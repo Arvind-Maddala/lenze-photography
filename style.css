@@ -661,11 +661,9 @@ margin-top:10px;
   
 .header__banner {
   background: url("./images/photographer-beard-mobile.jpeg") no-repeat center/cover;
-  height:100%;
-  width: 100%;
 }
 .header__overlay {
-  background-image: linear-gradient(to right,rgba(44, 62, 80, 1),rgba(255,255,255, 0.3));
+  background-image: linear-gradient(to right,rgba(44, 62, 80, 0.7),rgba(0,0,0, 0.5));
   height:100%;
   width: 100%;
   color:white;   
