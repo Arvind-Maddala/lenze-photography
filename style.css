@@ -484,6 +484,7 @@ margin-top:10px;
 
 @media (max-width:768px) {
  
+
  
   .navbar{
     position:relative;
@@ -522,6 +523,8 @@ margin-top:10px;
 
 
 /* Header */
+
+
 
 .header__context{
   padding: 2rem;
@@ -650,5 +653,21 @@ margin-top:10px;
 
 .toggle .line3 {
     transform: rotate(45deg) translate(-5px, -6px);
+}
+}
+
+
+@media (max-width:414px){
+  
+.header__banner {
+  background: url("./images/photographer-beard-mobile.jpeg") no-repeat center/cover;
+  height:100%;
+  width: 100%;
+}
+.header__overlay {
+  background-image: linear-gradient(to right,rgba(44, 62, 80, 1),rgba(255,255,255, 0.3));
+  height:100%;
+  width: 100%;
+  color:white;   
 }
 }
