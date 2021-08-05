@@ -540,8 +540,6 @@ margin-top:10px;
   margin-top: 1.5rem;
   font-size:2.5rem;
   color: var(--gray);
-  text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
-               0px -5px 16px rgba(255,255,255,0.3);
 }
 .header__context p{
   width: 80%;
@@ -552,8 +550,7 @@ margin-top:10px;
 .header__home, .header__portfolio {
   color: var(--light-graygray);
   color: rgba(255, 255, 255, 0.705);
-  text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
-  0px -5px 16px rgba(255,255,255,0.3);
+
 }
 
 /* Filter-gallery */
@@ -669,7 +666,7 @@ margin-top:10px;
   background: url("./images/photographer-beard-mobile.jpeg") no-repeat center/cover;
 }
 .header__overlay {
-  background-image: linear-gradient(to right,rgba(44, 62, 80, 0.8),rgba(36, 28, 28, 0.445));
+  background-image: linear-gradient(to right,rgba(44, 62, 80, 0.5),rgba(44, 62, 80, 0.4));
   height:100%;
   width: 100%;
   color:white;   
