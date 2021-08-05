@@ -32,7 +32,7 @@ img{
   display:flex;
   justify-content:space-around;
   align-items:center;
-  height:10vh;
+  height:12vh;
   width:100vw;
 }
 
@@ -109,15 +109,15 @@ color:var(--gray);
 
 }
 /* Header-Banner */
-.header .header__banner {
+.header__banner {
   background: url("./images/photographer-beard.jpeg") no-repeat center/cover;
-  height:50vh;
+  height:100%;
   width: 100%;
 }
-.header .header__banner .header__overlay {
-  background-image: linear-gradient(to right,rgba(44, 62, 80, 1),rgba(0,0,0, 0.1),rgba(255,255,255, 0.3));
-  height:50vh;
-  width: 100vw;
+.header__overlay {
+  background-image: linear-gradient(to right,rgba(44, 62, 80, 1),rgba(44, 62, 80, 0.7),rgba(255,255,255, 0.3));
+  height:100%;
+  width: 100%;
   color:white;   
 }
 
@@ -126,27 +126,25 @@ color:var(--gray);
 /* Header */
 
 .header__context{
-  width:80%;
   display:flex;
   flex-direction: column;font-family: 'Oswald', sans-serif;
-  padding: 1rem 2rem;
+  padding: 3rem;
 }
 
 .header__context h1{
-  margin:2rem 0 1rem;
   font-family: 'Oswald', sans-serif;
-  font-size: 50px;
+  font-size: 3rem;
 }
 
 .header__context p{
-  width:60%;
+  width:50%;
   line-height:1.6;
-  font-size: 22px;
+  font-size: 1.5rem;
 }
 
 .header__context h3{
   margin: 1.5rem 0;
-  font-size:25px;
+  font-size:1.5rem;
 }
 
 .header__home:hover{
@@ -495,7 +493,7 @@ margin-top:10px;
   .navbar__links{
     position: fixed;
     right:0px;
-    top:10vh;
+    top:12vh;
     height:100%;
     display: flex;
     flex-direction: column;
