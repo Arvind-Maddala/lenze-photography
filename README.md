@@ -1,4 +1,4 @@
-# lenze-photography
+# NIXCLIX
 
 This is a Multi page photography portfolio website.
 
@@ -10,4 +10,4 @@ This is a Multi page photography portfolio website.
 * ### CSS
 * ### JAVASCRIPT
 
-[Live Demo](https://lenze-photography-by-arvind.netlify.app/)
+[Live Demo](https://nixclix.netlify.app/)
